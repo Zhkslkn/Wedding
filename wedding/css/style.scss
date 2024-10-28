@@ -1,0 +1,450 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  font-family: "Lora", sans-serif;
+  height: 100vh;
+  width: 100%;
+
+  &_block {
+    height: 90vh;
+    width: 100%;
+    background: url("../img/hero-bckg.jpg") no-repeat center top;
+    background-size: cover;
+
+    .hero_inner {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .hero_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & span {
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 100%;
+          letter-spacing: 2px;
+          text-align: center;
+        }
+      }
+
+      .hero_img {
+        width: 100%;
+        height: auto;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &_music {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    .text-circle {
+      position: absolute;
+      top: -55px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 60px;
+      width: 60px;
+
+      .circle {
+        display: block;
+        overflow: visible;
+        width: 60px;
+        font-size: 15px;
+        fill: #000;
+        animation: rotate 5s linear infinite;
+
+        & path {
+          fill: none;
+        }
+      }
+    }
+
+    .play-circle {
+      position: absolute;
+      top: -52px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 54px;
+      width: 54px;
+      border-radius: 50%;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.divider_line {
+  width: 80vw;
+  height: 2px;
+  background: #000;
+  margin: 0 auto 50px;
+}
+
+.owners {
+  width: 100%;
+  height: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Playfair Display", sans-serif;
+  background: #413e43;
+  color: #c1c1c1;
+  font-size: 18px;
+  letter-spacing: 4px;
+  gap: 20px;
+  padding: 20px 0;
+
+  &_date {
+    font-family: "Lora", sans-serif;
+    font-size: 48px;
+    color: #fff;
+  }
+
+  &_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    span {
+      font-family: "Great Vibes", cursive;
+      font-size: 36px;
+      letter-spacing: 3px;
+      color: #fff;
+    }
+  }
+}
+
+.start {
+  height: auto;
+  padding: 30px 0;
+  width: 100%;
+
+  &-inner {
+    min-height: 280px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    &_main {
+      font-family: "Lora", sans-serif;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-70%);
+      font-size: 60px;
+      font-weight: 400;
+      letter-spacing: 4px;
+
+      span {
+        font-family: "Great Vibes", cursive;
+        font-size: 40px;
+        position: absolute;
+        top: 48px;
+        left: 36%;
+      }
+    }
+
+    &_divider {
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      height: 80px;
+      width: 2px;
+      background: #000;
+    }
+
+    &_time {
+      font-family: "Playfair Display", sans-serif;
+      font-size: 36px;
+      position: absolute;
+      top: 220px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.location {
+  height: auto;
+  padding: 10px 0 30px;
+  width: 100%;
+
+  &-inner {
+    min-height: 500px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    &_main {
+      font-family: "Lora", sans-serif;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-70%);
+      font-size: 60px;
+      font-weight: 400;
+      letter-spacing: 4px;
+
+      span {
+        font-family: "Great Vibes", cursive;
+        font-size: 40px;
+        position: absolute;
+        top: 48px;
+        left: 36%;
+      }
+    }
+
+    &_photo {
+      position: relative;
+      width: 34%;
+      height: auto;
+      margin: 140px auto 0;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #878185;
+        transform: rotate(-15deg);
+        z-index: -1;
+        border-radius: 40px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+      }
+    }
+
+    &_text {
+      margin-top: 40px;
+      text-align: center;
+      font-family: "Playfair Display", sans-serif;
+      font-size: 16px;
+    }
+
+    &_place {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      width: 100%;
+      height: auto;
+
+      &_circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.additional {
+  height: auto;
+  width: 100%;
+  position: relative;
+
+  &_main {
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    font-family: "Great Vibes", cursive;
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .form {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Playfair Display", sans-serif;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+
+      .name-field {
+        margin-top: 20px;
+        font-size: 18px;
+        width: 100%;
+        height: auto;
+
+        input {
+          width: 100%;
+          height: 100%;
+          border: none;
+          border-bottom: 2px solid #000;
+          padding: 8px;
+          outline: none;
+
+
+          &:focus {
+            border-bottom-color: #007bff;
+          }
+        }
+      }
+
+      .radio-buttons {
+        font-size: 18px;
+        line-height: 120%;
+        width: 100%;
+        height: auto;
+
+        label {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: inline-block;
+          max-width: 400px;
+        }
+
+        @media (max-width: 420px) {
+          label {
+            max-width: 260px;
+          }
+        }
+
+        .main-label {
+          color: #9f9f9f;
+        }
+
+        input {
+          width: 16px;
+          height: 16px;
+          margin-right: 6px;
+          border: 2px solid #007bff;
+        }
+      }
+
+      .submit {
+        margin-top: 5px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          width: 40%;
+          font-size: 14px;
+          padding: 8px 12px;
+          background: #000;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.countdown {
+  margin-top: 30px;
+  height: auto;
+  min-height: 600px;
+  width: 100%;
+  background: url("../img/timer-photo.jpg") no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+  color: #cccccc;
+
+  &_text {
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &_time {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+
+    .time-part {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 16px;
+      color: #a6a6a6;
+
+      span {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #ffffff;
+      }
+    }
+
+    .colon {
+      font-size: 26px;
+      line-height: 1;
+    }
+  }
+}
+
+.only-mobile {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_text {
+    text-align: center;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
