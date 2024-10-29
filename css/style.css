@@ -29,7 +29,7 @@
   justify-content: center;
 }
 .hero_block .hero_inner .hero_text span {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 48px;
   line-height: 100%;
   letter-spacing: 2px;
@@ -232,7 +232,7 @@
 .location-inner_text {
   margin-top: 40px;
   text-align: center;
-  font-family: "Spectral", sans-serif;
+  font-family: "Lobster", cursive;
   font-size: 16px;
 }
 .location-inner_place {
